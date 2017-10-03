@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.wink.anu.look4book.MainActivity">
+       <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_text_view"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_centerInParent="true"
+        />
+
+
+
+</RelativeLayout>

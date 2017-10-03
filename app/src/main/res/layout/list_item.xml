@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="14dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="14dp"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        fresco:placeholderImage="@drawable/my_drawable"
+        />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+
+
+        >
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_author"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:textAllCaps="true"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-medium"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:layout_gravity="start"
+            android:textSize="12sp"
+            android:textColor="#2B3D4D"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_title"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/tv_author"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="#2B3D4D"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:layout_gravity="start"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_author"
+            android:text="TextView" />
+    </RelativeLayout>
+
+
+</LinearLayout>
